@@ -321,7 +321,7 @@ class Core(CorePluginBase):
         val_type = type(self._initial_settings[k])
         try:
           settings[k] = val_type(settings[k])
-        except TypeError, ValueError:
+        except TypeError(ValueError):
           settings[k] = self._initial_settings[k]
 
 

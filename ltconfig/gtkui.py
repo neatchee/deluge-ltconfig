@@ -165,6 +165,7 @@ class GtkUI(Gtk3PluginBase):
 
 
     view.connect("button-press-event", on_button_pressed)
+    view.get_selection().set_mode(gtk.SelectionMode.NONE)
     view.set_search_column(1)
 
     col = gtk.TreeViewColumn()
